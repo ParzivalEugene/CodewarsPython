@@ -9,7 +9,7 @@ def creat(title: str, kyu: str) -> str:
         return "This kata already exists"
 
     open(f"{kyu} kyu/{title}.py", "w")
-    return "Successfully created file"
+    return "Successfully created the file"
 
 
 title = input("Insert title of kata: ").replace(" ", "_").replace(":", "-").replace("?", "")
